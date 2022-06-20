@@ -9,7 +9,6 @@
     /* Opera/IE 8+ */
     font-family: 'Avenir', sans-serif;
     color: white;
-
 }
 
 @font-face {
@@ -21,21 +20,19 @@
     font-display: swap;
 }
 
-
-body,html {
+body, html {
     height: 100%;
     background-color: #201E34;
 }
-/*Page container property*/
+
+/*Page container property - this one limits the container to 1200px*/
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/*----------------------------------------------------------*/
-/*
-navbar
-*/
+/*--------------------NAVBAR--------------------------*/
+
 
 .navbar {
     display: flex;
@@ -86,12 +83,13 @@ navbar
 
 
 /*----------------HERO----------------*/
+
 .hero {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
-    top: 160px;
+    margin-top: 64px;
 }
 
 .hero-image {
@@ -106,10 +104,17 @@ navbar
     border-radius: 16px;
 }
 
+.hero-image-layer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: url("/img/hero-image.png");
+}
+
 .hero-image p {
     display: flex;
-    position: relative;
-    bottom: 36px;
+    position: absolute;
+    top: 300px;
     font-weight: 400;
     font-size: 14px;
     line-height: 130%;
@@ -180,11 +185,13 @@ navbar
 
 .hero-button {
     position: relative;
-    top: 64px;
+    margin-top: 64px;
+    margin-bottom: 136px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+
 }
 
 .hero-button p {
@@ -198,4 +205,26 @@ navbar
     border-radius: 32px;
     padding: 16px 24px;
     gap: 8px;
+
+}
+
+/*---------------BRAND SECTION----------------*/
+
+.brand-section {
+    display: flex;
+    height: 406px;
+    background: #176E4E;
+}
+
+.brand-section .container p {
+    text-align: center;
+    margin-top: 96px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+}
+
+.brand-section .container img {
+    margin-top: 48px;
+    max-width: 100%;
 }
