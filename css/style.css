@@ -51,6 +51,10 @@ body, html {
 
 /*--------------------NAVBAR--------------------------*/
 
+/* ANIMATIONS */
+
+
+
 
 .menu {
     background-color: #201E34;
@@ -62,6 +66,7 @@ body, html {
     transition: ease-in 0.2s;
 }
 .navbar {
+    transition: ease-in 0.2s;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -78,6 +83,7 @@ body, html {
 
 .navbar-logo {
     padding-right: 42px;
+    transition: ease-in 0.2s;
 }
 
 .navbar-left ul {
@@ -113,6 +119,7 @@ body, html {
     display: flex;
     align-items: center;
     padding-right: 24px;
+    font-size: 14px;
     font-family: "Avenir Medium", sans-serif;
     font-weight: 500;
 }
@@ -370,13 +377,13 @@ display: flex;
     background: #FFFFFF;
     max-width: 46%;
     border: 1px solid #DAE0E2;
-    box-shadow: 0px 4px 16px rgba(17, 85, 60, 0.05);
+    box-shadow: 0 4px 16px rgba(17, 85, 60, 0.05);
     border-radius: 16px;
     margin-bottom: 100px;
 }
 
 .marketing-productivity-case-container .case-header {
-    font-family: 'Avenir Heavy';
+    font-family: 'Avenir Heavy', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 26px;
@@ -386,7 +393,7 @@ display: flex;
 }
 
 .marketing-productivity-case-container > p {
-    font-family: 'Avenir';
+    font-family: 'Avenir', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
@@ -396,7 +403,7 @@ display: flex;
 }
 
 .button-projects {
-    font-family: 'Avenir Heavy';
+    font-family: 'Avenir Heavy', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 17px;
@@ -411,7 +418,7 @@ display: flex;
 }
 
 .button-contactus {
-    font-family: 'Avenir Heavy';
+    font-family: 'Avenir Heavy', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 17px;
@@ -433,8 +440,15 @@ display: flex;
     justify-items: center;
 }
 
+
 .white {
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(32px);
     transition: ease-in 0.2s;
+}
+
+.minimized {
+    transition: ease-in 0.2s;
+    transform: scale(0.7);
+    margin-left: 40px;
 }
