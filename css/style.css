@@ -101,9 +101,7 @@ body, html {
     list-style: none;
 }
 
-.navbar-left svg {
-    margin-left: 5px;
-}
+
 
 .navbar-contactus {
     font-family: "Avenir Heavy", sans-serif;
@@ -450,5 +448,9 @@ display: flex;
 .minimized {
     transition: ease-in 0.2s;
     transform: scale(0.7);
-    margin-left: 30px;
+    margin-left: 35px;
 }
+
+/*.navbar-left svg {*/
+/*    margin-left: 5px;*/
+/*}*/

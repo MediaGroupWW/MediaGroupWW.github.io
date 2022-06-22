@@ -22,7 +22,6 @@ const updateClass = () => {
     for (let i = 0; i < logotype.length; i++) {
         logotype[i].setAttribute('fill', '#197A56');
     }
-
     document.getElementById('language').style.color = "#36464D";
     document.getElementById('nav').style.height = '64px';
     menu.classList.add("white");
