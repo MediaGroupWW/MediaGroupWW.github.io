@@ -768,6 +768,7 @@ body, html {
     border: 1px solid #D1E4DD;
     border-radius: 8px;
     height: 96px;
+    resize: none;
 }
 
 .flex-outer button {
