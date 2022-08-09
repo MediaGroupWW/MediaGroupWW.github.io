@@ -62,7 +62,7 @@ body, html {
 
 .menu {
     background-color: #201E34;
-    z-index: 999;
+    z-index: 10;
     position: fixed;
     top: 0;
     left: 0;
@@ -166,7 +166,7 @@ body, html {
 .hero-image p {
     display: flex;
     position: absolute;
-    top: 300px;
+    top: 450px;
     font-weight: 400;
     font-size: 14px;
     line-height: 130%;
@@ -469,10 +469,15 @@ body, html {
     flex-wrap: nowrap;
 }
 
-.jobs-section-container img {
-    max-width: 100%;
-    border-radius: 8px;
+.jobs-section-top-vector {
+   position: relative;
+
+
 }
+/*.jobs-section-container img {*/
+/*    max-width: 100%;*/
+/*    border-radius: 8px;*/
+/*}*/
 
 
 .jobs-section-text {
@@ -548,7 +553,7 @@ body, html {
     /* or 45px */
     color: #1B5A49;
     text-align: center;
-    margin-bottom: 41px;
+    margin-bottom: 57px;
     width: 100%;
 }
 
@@ -585,6 +590,131 @@ body, html {
     line-height: 130%;
     color: #36464D;
 
+}
+
+
+/*------------CONTACT SECTION---------*/
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(243, 247, 246, 0) 0%, rgba(243, 247, 246, 0.69599) 18.23%, rgba(243, 247, 246, 0.807692) 48.96%);
+}
+
+.contact-section-box {
+    margin: 200px 0;
+    max-width: 575px;
+    background: #FFFFFF;
+    border: 1px solid #DAE0E2;
+    box-shadow: 0px 4px 16px rgba(17, 85, 60, 0.05);
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.contact-section-box h1 {
+    font-family: 'Avenir Heavy';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 33px;
+    line-height: 120%;
+    color: #1B5A49;
+    padding: 14px 48px 34px 48px;
+}
+
+.contact-section-box img {
+    padding-top: 51px;
+    padding-left: 48px;
+}
+
+.contact-form {
+}
+
+.flex-outer li {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0 48px;
+}
+
+.flex-outer label {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    font-family: 'Avenir Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #197A56;
+    padding-bottom: 4px;
+}
+
+.flex-outer input {
+    background: #F5FAF8;
+    border: 1px solid #D1E4DD;
+    border-radius: 8px;
+    height: 40px;
+    margin-bottom: 16px;
+}
+
+.flex-outer textarea {
+    background: #F5FAF8;
+    border: 1px solid #D1E4DD;
+    border-radius: 8px;
+    height: 96px;
+    resize: none;
+}
+
+.flex-outer button {
+    width: 101px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 48px;
+    margin-top: 24px;
+    margin-bottom: 45px;
+    background: #197A56;
+    border: 1px solid #166A4B;
+    border-radius: 32px;
+    font-family: 'Avenir Heavy';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 17px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.form-button {
+    display: flex;
+    align-items: center;
+}
+
+.form-button p {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #62767F;
+    padding-left: 19px;
+}
+
+
+.contact-section-box-top-vector {
+    position: relative;
+    bottom: -170px;
+    left: 180px;
+    height: 0;
+    width: 0;
+    z-index: 0;
+}
+
+.contact-section-box-bottom-vector {
+    position: relative;
+    height: 0;
+    width: 0;
+    z-index: 0;
+    top: 650px;
+    right: 590px;
 }
 
 /*------------BADGE SECTION---------*/
@@ -702,107 +832,6 @@ body, html {
     opacity: 0.5;
 }
 
-.contact-section {
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(180deg, rgba(243, 247, 246, 0) 0%, rgba(243, 247, 246, 0.69599) 18.23%, rgba(243, 247, 246, 0.807692) 48.96%);
-}
-
-.contact-section-box {
-    margin: 200px 0;
-    max-width: 575px;
-    background: #FFFFFF;
-    border: 1px solid #DAE0E2;
-    box-shadow: 0px 4px 16px rgba(17, 85, 60, 0.05);
-    border-radius: 16px;
-}
-
-.contact-section-box h1 {
-    font-family: 'Avenir Heavy';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 33px;
-    line-height: 120%;
-    color: #1B5A49;
-    padding: 14px 48px 34px 48px;
-}
-
-.contact-section-box img {
-    padding-top: 51px;
-    padding-left: 48px;
-}
-
-.contact-form {
-}
-
-.flex-outer li {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    padding: 0 48px;
-}
-
-.flex-outer label {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    font-family: 'Avenir Medium';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 19px;
-    color: #197A56;
-    padding-bottom: 4px;
-}
-
-.flex-outer input {
-    background: #F5FAF8;
-    border: 1px solid #D1E4DD;
-    border-radius: 8px;
-    height: 40px;
-    margin-bottom: 16px;
-}
-
-.flex-outer textarea {
-    background: #F5FAF8;
-    border: 1px solid #D1E4DD;
-    border-radius: 8px;
-    height: 96px;
-    resize: none;
-}
-
-.flex-outer button {
-    width: 101px;
-    height: 40px;
-    cursor: pointer;
-    margin-left: 48px;
-    margin-top: 24px;
-    margin-bottom: 45px;
-    background: #197A56;
-    border: 1px solid #166A4B;
-    border-radius: 32px;
-    font-family: 'Avenir Heavy';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 17px;
-    line-height: 20px;
-    color: #FFFFFF;
-}
-
-.form-button {
-    display: flex;
-    align-items: center;
-}
-
-.form-button p {
-    font-family: 'Avenir';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 130%;
-    color: #62767F;
-    padding-left: 19px;
-}
 
 /*.navbar-left svg {*/
 /*    margin-left: 5px;*/
