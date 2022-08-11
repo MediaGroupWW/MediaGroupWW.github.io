@@ -46,7 +46,7 @@ body, html {
 
 /*Page container property - this one limits the container to 1200px*/
 .container, .brand-section-content, .marketing-productivity-content, .marketing-productivity-casestudies, .jobs-section-container,
-.difference-section-container, .badge-section-container, .footer-container {
+.difference-section-container, .badge-section-container, .footer-container, .brand-section-companies {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -70,6 +70,18 @@ body, html {
     transition: ease-in 0.2s;
 }
 
+.second-menu {
+    transition: ease-in 0.2s;
+    z-index: 10;
+    position: fixed;
+    background-color: #201E34;;
+    left: 0;
+    right: 0;
+    top: 96px;
+    display: none;
+    animation: secondmenueasein 0.2s ease-in;
+}
+
 .navbar {
     transition: ease-in 0.2s;
     max-width: 1200px;
@@ -81,9 +93,88 @@ body, html {
     height: 96px;
 }
 
+.second-navbar {
+    transition: ease-in 0.2s;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 32px;
+    flex-wrap: nowrap;
+    height: 216px;
+}
+
+.collapsed-second-menu {
+    display: block;
+    animation: secondmenueasein 0.2s ease-in;
+}
+
+@keyframes secondmenueasein {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.collapsed-first-menu-lis {
+    color: #197A56 !important;
+    fill: #197A56 !important;
+}
+
+.collapsed-first-menu-svg {
+    fill: #36464D !important;
+    color: #36464D !important;
+}
+
+.collapsed-first-menu {
+    background-color: white;
+}
+
+.second-navbar-box {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #464554;
+    padding-left: 16px;
+}
+
+.second-navbar-box a {
+    text-decoration: none;
+    font-family: "Avenir", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23.22px;
+    padding-right: 32px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.second-navbar-box a:not(:first-child) {
+    padding-top: 16px;
+}
+
+.second-navbar-box a:first-child {
+    font-family: "Avenir Heavy", sans-serif;
+    font-weight: 900;
+}
+
 .navbar-left {
     display: flex;
     align-items: center;
+    list-style: none;
+    font-family: "Avenir Medium", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 23.22px;
+    padding-right: 32px;
+    cursor: pointer;
 }
 
 .navbar-logo {
@@ -104,6 +195,11 @@ body, html {
     line-height: 23.22px;
     padding-right: 32px;
     list-style: none;
+    cursor: pointer;
+}
+
+.navbar-left li svg {
+    margin-left: 5px;
 }
 
 
@@ -115,6 +211,7 @@ body, html {
     background: #197A56;
     border: 1px solid #166A4B;
     border-radius: 32px;
+    cursor: pointer;
 }
 
 .language-selector {
@@ -124,6 +221,7 @@ body, html {
     font-size: 14px;
     font-family: "Avenir Medium", sans-serif;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .language-selector > svg {
@@ -141,6 +239,7 @@ body, html {
 .hero {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
     position: relative;
     padding-top:160px;
@@ -150,18 +249,15 @@ body, html {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    width: 576px;
-    height: 365px;
     background: linear-gradient(124.56deg, #1C875F 10.09%, #156648 69.62%);
     border-radius: 16px;
 }
 
-.hero-image-layer {
+.hero-image img {
     width: 100%;
-    height: 100%;
-    display: flex;
-    background: url("/img/hero-image.png");
+    height: auto;
 }
+
 
 .hero-image p {
     display: flex;
@@ -181,8 +277,6 @@ body, html {
 }
 
 .hero-text {
-    position: relative;
-    top: 88px;
 }
 
 
@@ -209,6 +303,7 @@ body, html {
     padding-top: 120px;
     justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .hero-services .service {
@@ -263,15 +358,13 @@ body, html {
 /*---------------BRAND SECTION----------------*/
 
 .brand-section {
-    height: 406px;
     background: #176E4E;
 }
 
 .brand-section-content {
     flex-wrap: wrap;
     display: flex;
-    align-items: center;
-    justify-content: center;
+
 }
 
 .brand-section-content p {
@@ -284,9 +377,22 @@ body, html {
     color: #D9D7E4;
 }
 
-.brand-section-content img {
-    margin-top: 48px;
-    width: 100%;
+
+.brand-section-companies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 50px;
+    padding-bottom: 100px;
+    padding-top: 55px;
+    justify-content: space-evenly;
+}
+
+
+.brand-section-companies img {
+    opacity: 0.5;
+    max-height: 64px;
+    display: flex;
+    flex: 1 0 10%;
 }
 
 /*------------MARKETING SECTION---------*/
@@ -831,8 +937,3 @@ body, html {
 .footer-end-right p {
     opacity: 0.5;
 }
-
-
-/*.navbar-left svg {*/
-/*    margin-left: 5px;*/
-/*}*/

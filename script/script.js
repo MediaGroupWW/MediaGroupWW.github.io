@@ -24,10 +24,11 @@ const updateClass = () => {
     }
     document.getElementById('language').style.color = "#36464D";
     document.getElementById('nav').style.height = '64px';
+    document.getElementById('second-menu').style.top = '64px';
+
     menu.classList.add("white");
     leftNavBar.classList.add("minimized");
 }
-
 
 const removeClass = () => {
     for (let i = 0; i < pathLeft.length; i++) {
@@ -43,6 +44,8 @@ const removeClass = () => {
         logotype[i].setAttribute('fill', 'white');
     }
     document.getElementById('nav').style.height = '96px';
+    document.getElementById('second-menu').style.top = '96px';
+
     document.getElementById('language').style.color = "white";
     menu.classList.remove("white");
     leftNavBar.classList.remove("minimized");
@@ -56,4 +59,3 @@ window.addEventListener('scroll', function () {
         removeClass();
     }
 });
-
