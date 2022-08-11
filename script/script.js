@@ -25,7 +25,8 @@ const updateClass = () => {
     document.getElementById('language').style.color = "#36464D";
     document.getElementById('nav').style.height = '64px';
     document.getElementById('second-menu').style.top = '64px';
-
+    document.getElementById('secondMenuArrow').style.top = '32px';
+    document.getElementById('servicesMenu').style.paddingLeft = '50px';
     menu.classList.add("white");
     leftNavBar.classList.add("minimized");
 }
@@ -45,8 +46,9 @@ const removeClass = () => {
     }
     document.getElementById('nav').style.height = '96px';
     document.getElementById('second-menu').style.top = '96px';
-
+    document.getElementById('secondMenuArrow').style.top = '48px';
     document.getElementById('language').style.color = "white";
+    document.getElementById('servicesMenu').style.paddingLeft = '0px';
     menu.classList.remove("white");
     leftNavBar.classList.remove("minimized");
 }

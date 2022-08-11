@@ -9,6 +9,7 @@
     /* Opera/IE 8+ */
     font-family: 'Avenir', sans-serif;
     color: white;
+
 }
 
 @font-face {
@@ -49,20 +50,29 @@ body, html {
 .difference-section-container, .badge-section-container, .footer-container, .brand-section-companies {
     max-width: 1200px;
     margin: 0 auto;
+
 }
 
 .full-bleed {
     background-color: #201E34;
 }
 
-/*--------------------NAVBAR--------------------------*/
+.show-arrow {
+display: inline !important;
+    animation: secondmenueasein 0.2s ease-in;
+    transition: ease-in 0.2s;
+}
 
 /* ANIMATIONS */
+
+/*--------------------NAVBAR--------------------------*/
+
+
 
 
 .menu {
     background-color: #201E34;
-    z-index: 10;
+    z-index: 9;
     position: fixed;
     top: 0;
     left: 0;
@@ -72,9 +82,11 @@ body, html {
 
 .second-menu {
     transition: ease-in 0.2s;
-    z-index: 10;
+    z-index: 9;
     position: fixed;
-    background-color: #201E34;;
+    background: rgba(23, 21, 40, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(32px);
     left: 0;
     right: 0;
     top: 96px;
@@ -104,6 +116,18 @@ body, html {
     flex-wrap: nowrap;
     height: 216px;
 }
+
+.second-navbar-arrow {
+    position: relative;
+    top: 48px;
+    right: 55px;
+    z-index: 11;
+    width: 0;
+    height: 0;
+    display: none;
+    animation: secondmenueasein 0.2s ease-in;
+}
+
 
 .collapsed-second-menu {
     display: block;
@@ -165,6 +189,11 @@ body, html {
     font-weight: 900;
 }
 
+.second-navbar-box a:hover {
+   text-decoration: underline white;
+
+}
+
 .navbar-left {
     display: flex;
     align-items: center;
@@ -178,7 +207,7 @@ body, html {
 }
 
 .navbar-logo {
-    margin-right: 42px;
+    margin-right: 26px;
     transition: ease-in 0.2s;
 }
 
@@ -193,7 +222,7 @@ body, html {
     font-weight: 500;
     font-size: 17px;
     line-height: 23.22px;
-    padding-right: 32px;
+    padding: 10px 16px;
     list-style: none;
     cursor: pointer;
 }
@@ -242,7 +271,7 @@ body, html {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    padding-top:160px;
+    padding-top: 160px;
 }
 
 .hero-image {
@@ -251,13 +280,26 @@ body, html {
     justify-content: center;
     background: linear-gradient(124.56deg, #1C875F 10.09%, #156648 69.62%);
     border-radius: 16px;
+    z-index: 0;
 }
 
-.hero-image img {
+.hero-image-vector {
+    position: relative;
+    bottom: 350px;
+    right: 380px;
+    height: 0;
+    width: 0;
+    z-index: -1;
+}
+
+}
+
+.hero-image img:first-child {
     width: 100%;
     height: auto;
-}
+    z-index: 1;
 
+}
 
 .hero-image p {
     display: flex;
@@ -274,9 +316,7 @@ body, html {
     border-radius: 24px;
     /* or 18px */
     text-transform: uppercase;
-}
-
-.hero-text {
+    cursor: pointer;
 }
 
 
@@ -338,7 +378,7 @@ body, html {
     align-items: center;
     justify-content: center;
     width: 100%;
-
+    cursor: pointer;
 }
 
 .hero-button p {
@@ -405,38 +445,48 @@ body, html {
     display: flex;
     justify-content: space-around;
     padding-top: 150px;
+    flex-wrap: wrap;
 }
 
 .marketing-productivity-image {
+
+}
+
+.marketing-productivity-image img {
     display: flex;
-    width: 576px;
-    height: 421px;
+    width: 100%;
+    height: auto;
     background: url("/img/marketing-image.png");
     border-radius: 16px;
-    justify-content: center;
-    align-items: flex-end;
 }
 
 .marketing-productivity-image p {
     display: flex;
+    position: relative;
+    bottom: 72px;
+    max-width: 360px;
     font-weight: 400;
     font-size: 14px;
     line-height: 130%;
     padding: 12px 24px;
     gap: 8px;
-    background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(32px);
+    background: rgba(0, 0, 0, 0.4);
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 24px;
     /* or 18px */
     text-transform: uppercase;
-    position: relative;
-    bottom: 30px;
+    cursor: pointer;
+    left: calc(50% - 180px);
 }
 
 .marketing-productivity-text {
     max-width: 39%;
     padding-top: 32px;
+}
+
+.marketing-productivity-layer-text {
+    cursor: pointer;
 }
 
 .marketing-productivity-text h1 {
@@ -481,13 +531,13 @@ body, html {
     flex-wrap: wrap;
     justify-items: flex-end;
     justify-content: flex-end;
-    align-items: flex-end;
     background: #FFFFFF;
-    max-width: 46%;
+    max-width: 552px;
     border: 1px solid #DAE0E2;
     box-shadow: 0 4px 16px rgba(17, 85, 60, 0.05);
     border-radius: 16px;
     margin-bottom: 100px;
+    cursor: pointer;
 }
 
 .marketing-productivity-case-container .case-header {
@@ -498,6 +548,11 @@ body, html {
     line-height: 120%;
     color: #197A56;
     padding: 24px 54px 16px 24px;
+}
+
+.case-container-image img {
+    width: 100%;
+    height: auto;
 }
 
 .marketing-productivity-case-container > p {
@@ -523,6 +578,7 @@ body, html {
     padding: 16px 24px;
     gap: 8px;
     margin-right: 24px;
+    cursor: pointer;
 }
 
 .button-contactus {
@@ -537,15 +593,17 @@ body, html {
     background: rgba(0, 166, 104, 0.05);
     border: 1px solid rgba(25, 122, 86, 0.5);
     border-radius: 32px;
+    cursor: pointer;
 
 }
 
 .marketing-productivity-buttons {
     margin: 0 auto;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     justify-items: center;
+    width: 100%;
 }
 
 
@@ -572,18 +630,18 @@ body, html {
 .jobs-section-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .jobs-section-top-vector {
-   position: relative;
-
-
+    position: relative;
 }
-/*.jobs-section-container img {*/
-/*    max-width: 100%;*/
-/*    border-radius: 8px;*/
-/*}*/
+
+.jobs-section-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 
 
 .jobs-section-text {
@@ -634,6 +692,7 @@ body, html {
     color: #197A56;
     font-family: 'Avenir Heavy';
     font-weight: 900;
+    cursor: pointer;
 }
 
 
@@ -807,8 +866,8 @@ body, html {
 
 .contact-section-box-top-vector {
     position: relative;
-    bottom: -170px;
-    left: 180px;
+    bottom: -230px;
+    left: 170px;
     height: 0;
     width: 0;
     z-index: 0;
@@ -819,8 +878,8 @@ body, html {
     height: 0;
     width: 0;
     z-index: 0;
-    top: 650px;
-    right: 590px;
+    top: 700px;
+    right: 600px;
 }
 
 /*------------BADGE SECTION---------*/
@@ -845,11 +904,9 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.badge-section-badges img {
-    /*display: flex;*/
-}
 
 /*------------FOOTER SECTION---------*/
 
@@ -886,7 +943,7 @@ body, html {
     flex-direction: column;
 }
 
-.footer-services a, .footer-clients a, .footer-insights a, .footer-aboutus a, .footer-contact a:not(:first-child)  {
+.footer-services a, .footer-clients a, .footer-insights a, .footer-aboutus a, .footer-contact a:not(:first-child) {
     padding-top: 16px;
     text-decoration: none;
     font-family: 'Avenir';
