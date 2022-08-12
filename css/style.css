@@ -45,6 +45,10 @@ body, html {
     background-color: white;
 }
 
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
 /*Page container property - this one limits the container to 1200px*/
 .container, .brand-section-content, .marketing-productivity-content, .marketing-productivity-casestudies, .jobs-section-container,
 .difference-section-container, .badge-section-container, .footer-container, .brand-section-companies {
