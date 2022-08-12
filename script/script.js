@@ -7,7 +7,10 @@ const pathRight = document.querySelectorAll("#navSVGGrey");
 const menu = document.getElementById('menu');
 const logotype = document.querySelectorAll("#logotypeSVG");
 const leftNavBar = document.getElementById('navLogo');
+const navContactUsButton = document.getElementById('navbarContact');
 
+
+// update class on scroll
 const updateClass = () => {
     for (let i = 0; i < pathLeft.length; i++) {
         pathLeft[i].setAttribute('fill', '#197A56');
@@ -29,7 +32,10 @@ const updateClass = () => {
     document.getElementById('servicesMenu').style.paddingLeft = '50px';
     menu.classList.add("white");
     leftNavBar.classList.add("minimized");
+    navContactUsButton.classList.add("scrolledButton");
 }
+
+// remove class on scroll to top
 
 const removeClass = () => {
     for (let i = 0; i < pathLeft.length; i++) {
@@ -46,11 +52,12 @@ const removeClass = () => {
     }
     document.getElementById('nav').style.height = '96px';
     document.getElementById('second-menu').style.top = '96px';
-    document.getElementById('secondMenuArrow').style.top = '48px';
+    document.getElementById('secondMenuArrow').style.top = '-33px';
     document.getElementById('language').style.color = "white";
     document.getElementById('servicesMenu').style.paddingLeft = '0px';
     menu.classList.remove("white");
     leftNavBar.classList.remove("minimized");
+    navContactUsButton.classList.remove("scrolledButton");
 }
 
 window.addEventListener('scroll', function () {

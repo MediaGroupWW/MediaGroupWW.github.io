@@ -5,15 +5,10 @@ const mainMenuLis = document.querySelectorAll('ul.menuList >li, ul.menuList > li
 const mainMenuLogo = document.querySelectorAll('#navLogo > svg > path');
 const mainMenuLanguage = document.querySelectorAll(`#language, #language > svg > path`);
 const allArrowsInSecondMenu = document.querySelectorAll('#secondMenuArrow');
+const wholeNav = document.querySelector('#nav');
 
 servicesMenuList.addEventListener('mouseover', () => {
     servicesSecondMenu.classList.toggle('collapsed-second-menu');
-    turnMainMenuToWhite();
-})
-
-
-
-function turnMainMenuToWhite() {
     mainMenu.classList.toggle('collapsed-first-menu');
 
     for (let e of mainMenuLis) {
@@ -47,6 +42,5 @@ function turnMainMenuToWhite() {
             e.classList.add('show-arrow');
         }
     }
-
-}
+})
 
