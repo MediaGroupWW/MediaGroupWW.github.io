@@ -69,6 +69,1001 @@ html.sr .load-hidden {
     transition: ease-in 0.2s;
 }
 
+    /*--------------------NAVBAR--------------------------*/
+    .menu {
+        background-color: #201E34;
+        z-index: 9;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        transition: ease-in 0.2s;
+    }
+
+    .second-menu {
+        transition: ease-in 0.2s;
+        z-index: 9;
+        position: fixed;
+        background: rgba(23, 21, 40, 0.9);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(32px);
+        left: 0;
+        right: 0;
+        top: 96px;
+        display: none;
+        animation: secondmenueasein 0.2s ease-in;
+    }
+
+    .navbar {
+        transition: ease-in 0.2s;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        height: 96px;
+    }
+
+    .second-navbar {
+        transition: ease-in 0.2s;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 32px;
+        flex-wrap: nowrap;
+        height: 216px;
+    }
+
+    .second-navbar-arrow {
+        position: relative;
+        top: -33px;
+        left: 130px;
+        z-index: 11;
+        width: 0;
+        height: 0;
+        display: none;
+        animation: secondmenueasein 0.2s ease-in;
+    }
+
+    .collapsed-second-menu {
+        display: block;
+        animation: secondmenueasein 0.2s ease-in;
+    }
+
+    @keyframes secondmenueasein {
+        0% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .collapsed-first-menu-lis {
+        color: #197A56 !important;
+        fill: #197A56 !important;
+    }
+
+    .collapsed-first-menu-svg {
+        fill: #36464D !important;
+        color: #36464D !important;
+    }
+
+    .collapsed-first-menu {
+        background-color: white;
+    }
+
+    .second-navbar-box {
+        display: flex;
+        flex-direction: column;
+        border-left: 1px solid #464554;
+        padding-left: 16px;
+    }
+
+    .second-navbar-box a {
+        text-decoration: none;
+        font-family: "Avenir", sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 23.22px;
+        padding-right: 32px;
+        list-style: none;
+        cursor: pointer;
+    }
+
+    .second-navbar-box a:not(:first-child) {
+        padding-top: 16px;
+    }
+
+    .second-navbar-box a:first-child {
+        font-family: "Avenir Heavy", sans-serif;
+        font-weight: 900;
+    }
+
+    .second-navbar-box a:hover {
+        text-decoration: underline white;
+
+    }
+
+    .navbar-left {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        font-family: "Avenir Medium", sans-serif;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 23.22px;
+        padding-right: 32px;
+        cursor: pointer;
+    }
+
+    .navbar-logo {
+        margin-right: 26px;
+        transition: ease-in 0.2s;
+    }
+
+    .navbar-left ul {
+        display: flex;
+    }
+
+    .navbar-left li {
+        display: flex;
+        align-items: center;
+        font-family: "Avenir Medium", sans-serif;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 23.22px;
+        padding: 10px 16px;
+        list-style: none;
+        cursor: pointer;
+    }
+
+    .navbar-left li svg {
+        margin-left: 5px;
+    }
+
+
+    .navbar-contactus {
+        font-family: "Avenir Heavy", sans-serif;
+        font-size: 17px;
+        line-height: 24px;
+        font-weight: 900;
+        padding: 8px 16px;
+        gap: 10px;
+        background: #197A56;
+        border: 1px solid #166A4B;
+        border-radius: 32px;
+        cursor: pointer;
+        transition: 0.2s ease-out;
+    }
+
+    .navbar-contactus:hover {
+        background: #FFFFFF;
+        border: 1px solid rgba(255, 255, 255, 0.75);
+        border-radius: 32px;
+        color: #197A56;
+        transition: 0.2s ease-out;
+    }
+
+    .language-selector {
+        display: flex;
+        align-items: center;
+        padding-right: 24px;
+        font-size: 14px;
+        font-family: "Avenir Medium", sans-serif;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .language-selector > svg {
+        margin: 0 5px;
+    }
+
+    .navbar-right {
+        display: flex;
+        align-items: center;
+    }
+
+
+    /*----------------HERO----------------*/
+    .hero {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding-top: 160px;
+    }
+
+    .hero-image {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        background: linear-gradient(124.56deg, #1C875F 10.09%, #156648 69.62%);
+        border-radius: 16px;
+        z-index: 0;
+    }
+
+    .hero-image-vector {
+        position: relative;
+        bottom: 350px;
+        right: 380px;
+        height: 0;
+        width: 0;
+        z-index: -1;
+    }
+
+    .hero-image > img {
+        width: 100%;
+        height: auto;
+        z-index: 1;
+    }
+
+    .hero-image p {
+        display: flex;
+        position: absolute;
+        top: 450px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+        padding: 12px 24px;
+        gap: 8px;
+        backdrop-filter: blur(32px);
+        background: rgba(0, 0, 0, 0.4);
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 24px;
+        /* or 18px */
+        text-transform: uppercase;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+
+    .hero-text h1 {
+        font-family: 'Avenir Heavy', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 51px;
+        line-height: 100%;
+
+    }
+
+    .hero-text h2 {
+        padding-top: 32px;
+        font-family: 'Avenir', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 130%;
+        color: #D9D7E4;
+    }
+
+    .hero-services {
+        display: flex;
+        padding-top: 120px;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .hero-services .service {
+        max-width: 260px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+
+    .hero-services .service h2 {
+        font-family: 'Avenir', sans-serif;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 130%;
+        color: #00C77D;
+        padding-bottom: 10px;
+    }
+
+    .hero-services .service p {
+        font-family: 'Avenir', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 130%;
+        color: #D9D7E4;
+    }
+
+    .hero-button {
+        position: relative;
+        margin-top: 64px;
+        margin-bottom: 136px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .hero-button p {
+        font-family: 'Avenir Heavy', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 17px;
+        line-height: 20px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 32px;
+        padding: 16px 24px;
+        gap: 8px;
+        transition: 0.2s ease-out;
+    }
+
+    .hero-button p:hover {
+        background: #FFFFFF;
+        border: 1px solid rgba(255, 255, 255, 0.75);
+        border-radius: 32px;
+        color: #197A56;
+        transition: 0.2s ease-out;
+    }
+
+    .scrolledButton:hover {
+        background: #198A60;
+        border: 1px solid #167954;
+        border-radius: 32px;
+        color: #FFFFFF;
+    }
+
+
+    /*---------------BRAND SECTION----------------*/
+    .brand-section {
+        background: #176E4E;
+    }
+
+    .brand-section-content {
+        flex-wrap: wrap;
+        display: flex;
+
+    }
+
+    .brand-section-content p {
+        width: 100%;
+        text-align: center;
+        margin-top: 96px;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 130%;
+        color: #D9D7E4;
+    }
+
+
+    .brand-section-companies {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px 50px;
+        padding-bottom: 100px;
+        padding-top: 55px;
+        justify-content: space-evenly;
+    }
+
+
+    .brand-section-companies img {
+        opacity: 0.5;
+        max-height: 64px;
+        display: flex;
+        flex: 1 0 10%;
+    }
+
+    /*------------MARKETING SECTION---------*/
+    .marketing-productivity {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .marketing-productivity-content {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 150px;
+        flex-wrap: wrap;
+    }
+
+    .marketing-productivity-vector {
+        position: relative;
+        width: 0;
+        height: 0;
+        top: 150px;
+        left: calc(100% - 226px);
+    }
+
+    .marketing-productivity-vectorBottom {
+        position: relative;
+        width: 0;
+        height: 0;
+        top: 1400px;
+    }
+
+    .marketing-productivity-image {
+
+    }
+
+    .marketing-productivity-image img {
+        display: flex;
+        width: 100%;
+        height: auto;
+        background: url("/img/marketing-image.png");
+        border-radius: 16px;
+    }
+
+    .marketing-productivity-image p {
+        display: flex;
+        position: relative;
+        bottom: 72px;
+        max-width: 360px;
+
+        font-size: 14px;
+        line-height: 130%;
+        padding: 12px 24px;
+        gap: 8px;
+        backdrop-filter: blur(32px);
+        background: rgba(0, 0, 0, 0.4);
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 24px;
+        /* or 18px */
+        text-transform: uppercase;
+        cursor: pointer;
+        left: calc(50% - 180px);
+    }
+
+    .marketing-productivity-text {
+        max-width: 39%;
+        padding-top: 32px;
+    }
+
+    .marketing-productivity-layer-text {
+        cursor: pointer;
+    }
+
+    .marketing-productivity-text h1 {
+        /* Marketing Productivity, Levelled Up */
+        font-weight: 900;
+        font-family: 'Avenir Heavy', sans-serif;
+        font-size: 41px;
+        line-height: 110%;
+        color: #1B5A49;
+        padding-bottom: 16px;
+    }
+
+    .marketing-productivity-text p {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 130%;
+        color: #36464D;
+    }
+
+    .marketing-productivity-hero {
+        font-family: 'Avenir Heavy', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 41px;
+        line-height: 110%;
+        /* or 45px */
+        text-align: center;
+        /* Heading Dark Green */
+        color: #1B5A49;
+        padding-top: 162px;
+    }
+
+    .marketing-productivity-casestudies {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 72px;
+    }
+
+    .marketing-productivity-case-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: flex-end;
+        justify-content: flex-end;
+        background: #FFFFFF;
+        max-width: 552px;
+        border: 1px solid #DAE0E2;
+        box-shadow: 0 4px 16px rgba(17, 85, 60, 0.05);
+        border-radius: 16px;
+        margin-bottom: 100px;
+        cursor: pointer;
+    }
+
+    .marketing-productivity-case-container .case-header {
+        font-family: 'Avenir Heavy', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 120%;
+        color: #197A56;
+        padding: 24px 54px 16px 24px;
+    }
+
+    .case-container-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .marketing-productivity-case-container > p {
+        font-family: 'Avenir', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 140%;
+        color: #62767F;
+        padding: 0 92px 29px 24px;
+    }
+
+    .button-projects {
+        font-family: 'Avenir Heavy', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 17px;
+        line-height: 20px;
+        color: #FFFFFF;
+        background: #197A56;
+        border: 1px solid #166A4B;
+        border-radius: 32px;
+        padding: 16px 24px;
+        gap: 8px;
+        margin-right: 24px;
+        cursor: pointer;
+        transition: ease-in 0.2s;
+
+    }
+
+    .button-projects:hover, .flex-outer button:hover {
+        background: #198A60;
+        border: 1px solid #167954;
+        border-radius: 32px;
+        color: #FFFFFF;
+        transition: ease-in 0.2s;
+
+    }
+
+    .button-contactus {
+        font-family: 'Avenir Heavy', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 17px;
+        line-height: 20px;
+        color: #197A56;
+        padding: 16px 24px;
+        gap: 8px;
+        background: rgba(0, 166, 104, 0.05);
+        border: 1px solid rgba(25, 122, 86, 0.5);
+        border-radius: 32px;
+        cursor: pointer;
+        transition: ease-in 0.2s;
+
+    }
+
+    .button-contactus:hover, .jobs-section-text button:hover {
+        background: rgba(0, 166, 104, 0.1);
+        border: 1px solid rgba(25, 122, 86, 0.75);
+        border-radius: 32px;
+        transition: ease-in 0.2s;
+
+    }
+
+    .marketing-productivity-buttons {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-items: center;
+        width: 100%;
+    }
+
+
+    .white {
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(32px);
+        transition: ease-in 0.2s;
+    }
+
+    .minimized {
+        transition: ease-in 0.2s;
+        transform: scale(0.7);
+        margin-left: 35px;
+    }
+
+    /*------------JOBS SECTION---------*/
+    .jobs-section {
+        background-color: white;
+        padding-top: 150px;
+        padding-bottom: 274px;
+    }
+
+    .jobs-section-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .jobs-section-vector {
+        position: relative;
+        bottom: 0px;
+        right: 25px;
+        width: 0;
+        height: 0;
+        z-index: 0;
+    }
+
+    .jobs-section-image {
+        z-index: 1;
+    }
+
+    .jobs-section-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+
+    .jobs-section-text {
+        margin-top: 32px;
+        margin-right: 100px;
+        max-width: 370px;
+
+    }
+
+    .jobs-section-text h1 {
+        font-family: 'Avenir Heavy';
+        font-size: 41px;
+        line-height: 110%;
+        color: #1B5A49;
+        font-style: normal;
+    }
+
+    .jobs-section-text mark {
+        font-family: 'Avenir Medium';
+        font-weight: 500;
+        line-height: 130%;
+        color: #1B5A49;
+        background-color: #E2EFEB;
+        border-radius: 3px;
+    }
+
+    .jobs-section-text p {
+        font-family: 'Avenir Medium';
+        color: #36464D;
+        font-size: 17px;
+        line-height: 130%;
+        margin-top: 35px;
+        font-weight: 500;
+        margin-bottom: 24px;
+    }
+
+    .jobs-section-text button {
+        margin-top: 33px;
+        display: flex;
+        background: rgba(0, 166, 104, 0.05);
+        border: 1px solid rgba(25, 122, 86, 0.5);
+        border-radius: 32px;
+        padding: 16px 24px;
+        font-weight: 900;
+        font-size: 17px;
+        line-height: 20px;
+        gap: 8px;
+        color: #197A56;
+        font-family: 'Avenir Heavy';
+        font-weight: 900;
+        cursor: pointer;
+        transition: 0.2s ease-out;
+    }
+
+
+    /*------------DIFFERENCE SECTION---------*/
+    .difference-section {
+        background-color: white;
+        padding-bottom: 120px;
+    }
+
+    .difference-section-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .difference-section-container h1 {
+        font-family: 'Avenir Heavy';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 41px;
+        line-height: 110%;
+        /* or 45px */
+        color: #1B5A49;
+        text-align: center;
+        margin-bottom: 57px;
+        width: 100%;
+    }
+
+    .difference-section-box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        padding: 32px 24px;
+        gap: 16px;
+        background: #FFFFFF;
+        border: 1px solid #DAE0E2;
+        border-radius: 16px;
+        max-width: 360px;
+        margin-bottom: 32px;
+
+    }
+
+    .difference-section-box h4 {
+        font-family: 'Avenir Heavy';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 21px;
+        line-height: 130%;
+        color: #1B5A49;
+    }
+
+    .difference-section-box p {
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 130%;
+        color: #36464D;
+
+    }
+
+
+    /*------------CONTACT SECTION---------*/
+    .contact-section {
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(180deg, rgba(243, 247, 246, 0) 0%, rgba(243, 247, 246, 0.69599) 18.23%, rgba(243, 247, 246, 0.807692) 48.96%);
+    }
+
+    .contact-section-box {
+        margin: 200px 0;
+        max-width: 575px;
+        background: #FFFFFF;
+        border: 1px solid #DAE0E2;
+        box-shadow: 0px 4px 16px rgba(17, 85, 60, 0.05);
+        border-radius: 16px;
+        z-index: 1;
+    }
+
+    .contact-section-box h1 {
+        font-family: 'Avenir Heavy';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 33px;
+        line-height: 120%;
+        color: #1B5A49;
+        padding: 14px 48px 34px 48px;
+    }
+
+    .contact-section-box img {
+        padding-top: 51px;
+        padding-left: 48px;
+    }
+
+    .contact-form {
+    }
+
+    .flex-outer li {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        padding: 0 48px;
+    }
+
+    .flex-outer label {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        font-family: 'Avenir Medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        color: #197A56;
+        padding-bottom: 4px;
+    }
+
+    .flex-outer input {
+        background: #F5FAF8;
+        border: 1px solid #D1E4DD;
+        border-radius: 8px;
+        height: 40px;
+        margin-bottom: 16px;
+    }
+
+    .flex-outer textarea {
+        background: #F5FAF8;
+        border: 1px solid #D1E4DD;
+        border-radius: 8px;
+        height: 96px;
+        resize: none;
+    }
+
+    .flex-outer button {
+        width: 101px;
+        height: 40px;
+        cursor: pointer;
+        margin-left: 48px;
+        margin-top: 24px;
+        margin-bottom: 45px;
+        background: #197A56;
+        border: 1px solid #166A4B;
+        border-radius: 32px;
+        font-family: 'Avenir Heavy';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 17px;
+        line-height: 20px;
+        color: #FFFFFF;
+        transition: 0.2s ease-out;
+    }
+
+    .form-button {
+        display: flex;
+        align-items: center;
+    }
+
+    .form-button p {
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+        color: #62767F;
+        padding-left: 19px;
+    }
+
+
+    .contact-section-box-top-vector {
+        position: relative;
+        bottom: -230px;
+        left: 170px;
+        height: 0;
+        width: 0;
+        z-index: 0;
+    }
+
+    .contact-section-box-bottom-vector {
+        position: relative;
+        height: 0;
+        width: 0;
+        z-index: 0;
+        top: 700px;
+        right: 600px;
+    }
+
+    /*------------BADGE SECTION---------*/
+    .badge-section {
+        padding: 64px 0;
+        background-color: white;
+    }
+
+    .badge-section p {
+        font-family: 'Avenir Medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 130%;
+        text-align: center;
+        color: #36464D;
+        margin-bottom: 24px;
+    }
+
+    .badge-section-badges {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+
+    /*------------FOOTER SECTION---------*/
+    .footer-top {
+        padding: 44px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .footer-top img {
+        cursor: pointer;
+    }
+
+    .footer-socials img {
+        padding-left: 40px;
+        cursor: pointer;
+    }
+
+    .footer-break-line {
+        border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .footer-bottom {
+        display: flex;
+        margin: 40px 0;
+        justify-content: space-between;
+    }
+
+    .footer-services, .footer-clients, .footer-insights, .footer-aboutus, .footer-contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-services a, .footer-clients a, .footer-insights a, .footer-aboutus a, .footer-contact a:not(:first-child) {
+        padding-top: 16px;
+        text-decoration: none;
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 130%;
+        color: #FFFFFF;
+    }
+
+    .footer-contact a {
+        text-decoration: none;
+        color: #00C77D !important;
+    }
+
+
+    .footer-bottom p {
+        font-family: 'Avenir Heavy';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 17px;
+        line-height: 130%;
+        color: #FFFFFF;
+    }
+
+    .footer-end {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px 0;
+    }
+
+    .footer-end-right {
+        display: flex;
+    }
+
+    .footer-end-right a, .footer-end-right p {
+        padding-left: 40px;
+        text-decoration: none;
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        color: #FFFFFF;
+    }
+
+    .footer-end-right p {
+        opacity: 0.5;
+    }
+
+
+
+
 
 /*------------------------MEDIA QUERIES--------------------------*/
 
@@ -183,6 +1178,9 @@ html.sr .load-hidden {
         padding: 0 16px 24px 16px !important;
     }
 
+    .contact-section-box {
+        margin: 130px 0;
+    }
     .contact-section-box-top-vector, .contact-section-box-bottom-vector {
         display: none;
     }
@@ -194,999 +1192,146 @@ html.sr .load-hidden {
     .button-contactus {
     }
 
-}
-
-
-/*--------------------NAVBAR--------------------------*/
-
-
-.menu {
-    background-color: #201E34;
-    z-index: 9;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: ease-in 0.2s;
-}
-
-.second-menu {
-    transition: ease-in 0.2s;
-    z-index: 9;
-    position: fixed;
-    background: rgba(23, 21, 40, 0.9);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(32px);
-    left: 0;
-    right: 0;
-    top: 96px;
-    display: none;
-    animation: secondmenueasein 0.2s ease-in;
-}
-
-.navbar {
-    transition: ease-in 0.2s;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-    height: 96px;
-}
-
-.second-navbar {
-    transition: ease-in 0.2s;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-top: 32px;
-    flex-wrap: nowrap;
-    height: 216px;
-}
-
-.second-navbar-arrow {
-    position: relative;
-    top: -33px;
-    left: 130px;
-    z-index: 11;
-    width: 0;
-    height: 0;
-    display: none;
-    animation: secondmenueasein 0.2s ease-in;
-}
-
-.collapsed-second-menu {
-    display: block;
-    animation: secondmenueasein 0.2s ease-in;
-}
-
-@keyframes secondmenueasein {
-    0% {
-        opacity: 0;
+    .jobs-section-vector {
+        top: -65px !important;
+        left: -75px !important;
     }
 
-    50% {
-        opacity: 0.5;
+    .jobs-section-vector > img {
+        transform: scale(0.55) !important;
     }
 
-    100% {
-        opacity: 1;
+    .jobs-section {
+        padding: 96px 16px 130px 16px !important;
+    }
+
+    .jobs-section-text {
+        margin: 0 !important;
+        padding-top: 24px;
+    }
+    .jobs-section-text h1 {
+        font-size: 26px !important;
+        line-height: 120% !important;
+    }
+
+    .jobs-section-text p {
+        margin: 16px 0 !important;
+    }
+
+    .jobs-section-text button {
+        margin: 24px auto !important;
+    }
+
+    .difference-section-container h1 {
+        font-size: 26px;
+        line-height: 120%;
+    }
+
+    .difference-section {
+        padding: 0 16px;
+    }
+
+    .difference-section-box {
+        margin-bottom: 16px;
+    }
+
+    .difference-section-box h4 {
+        font-size: 14px;
+        line-height: 130%;
+    }
+
+    .contact-section {
+        padding: 0 16px;
+    }
+
+    .contact-section-box h1 {
+        font-size: 21px;
+        line-height: 130%;
+        padding: 14px 24px 24px 24px
+    }
+
+    .flex-outer li {
+        padding: 0 24px;
+    }
+    .form-button {
+        flex-wrap: wrap;
+    }
+    .form-button button {
+        width: 100%;
+        margin: 24px 24px 16px 24px;
+        height: 52px;
+    }
+    .form-button p {
+        padding: 0 0 24px 24px;
+    }
+
+    .badge-section {
+        padding: 48px 16px;
+    }
+
+    .badge-section-badges {
+        gap: 24px 0;
+    }
+    .badge-section-badges img {
+        max-height: 64px;
+    }
+
+    .footer-container {
+        padding: 0 16px;
+    }
+    .footer-top {
+        gap: 30px 0;
+        padding: 30px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        justify-items: center;
+    }
+
+    .footer-socials {
+        width: 100%;
+    }
+
+    .footer-socials img {
+        padding-left: 30px;
+    }
+
+    .footer-bottom {
+        margin: 32px 0;
+        flex-wrap: wrap;
+    }
+    .footer-contact {
+        width: 100%;
+    }
+
+    .language-selector {
+        padding: 0 0 32px 0;
+    }
+    .footer-services, .footer-clients, .footer-insights, .footer-aboutus {
+        padding-top: 48px;
+        width: 100%;
+    }
+
+    .footer-end, .footer-end-right {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer-end-right a, .footer-end-right p {
+        padding: 0
+    }
+
+    .footer-end-right {
+        gap: 16px;
+    }
+
+    .marketing-productivity-buttons {
+        text-align: center;
+        flex-direction: column;
+        width: auto;
     }
 }
 
-.collapsed-first-menu-lis {
-    color: #197A56 !important;
-    fill: #197A56 !important;
-}
-
-.collapsed-first-menu-svg {
-    fill: #36464D !important;
-    color: #36464D !important;
-}
-
-.collapsed-first-menu {
-    background-color: white;
-}
-
-.second-navbar-box {
-    display: flex;
-    flex-direction: column;
-    border-left: 1px solid #464554;
-    padding-left: 16px;
-}
-
-.second-navbar-box a {
-    text-decoration: none;
-    font-family: "Avenir", sans-serif;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 23.22px;
-    padding-right: 32px;
-    list-style: none;
-    cursor: pointer;
-}
-
-.second-navbar-box a:not(:first-child) {
-    padding-top: 16px;
-}
-
-.second-navbar-box a:first-child {
-    font-family: "Avenir Heavy", sans-serif;
-    font-weight: 900;
-}
-
-.second-navbar-box a:hover {
-    text-decoration: underline white;
-
-}
-
-.navbar-left {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    font-family: "Avenir Medium", sans-serif;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 23.22px;
-    padding-right: 32px;
-    cursor: pointer;
-}
-
-.navbar-logo {
-    margin-right: 26px;
-    transition: ease-in 0.2s;
-}
-
-.navbar-left ul {
-    display: flex;
-}
-
-.navbar-left li {
-    display: flex;
-    align-items: center;
-    font-family: "Avenir Medium", sans-serif;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 23.22px;
-    padding: 10px 16px;
-    list-style: none;
-    cursor: pointer;
-}
-
-.navbar-left li svg {
-    margin-left: 5px;
-}
-
-
-.navbar-contactus {
-    font-family: "Avenir Heavy", sans-serif;
-    font-size: 17px;
-    line-height: 24px;
-    font-weight: 900;
-    padding: 8px 16px;
-    gap: 10px;
-    background: #197A56;
-    border: 1px solid #166A4B;
-    border-radius: 32px;
-    cursor: pointer;
-    transition: 0.2s ease-out;
-}
-
-.navbar-contactus:hover {
-    background: #FFFFFF;
-    border: 1px solid rgba(255, 255, 255, 0.75);
-    border-radius: 32px;
-    color: #197A56;
-    transition: 0.2s ease-out;
-}
-
-.language-selector {
-    display: flex;
-    align-items: center;
-    padding-right: 24px;
-    font-size: 14px;
-    font-family: "Avenir Medium", sans-serif;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-.language-selector > svg {
-    margin: 0 5px;
-}
-
-.navbar-right {
-    display: flex;
-    align-items: center;
-}
-
-
-/*----------------HERO----------------*/
-
-.hero {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    padding-top: 160px;
-}
-
-.hero-image {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    background: linear-gradient(124.56deg, #1C875F 10.09%, #156648 69.62%);
-    border-radius: 16px;
-    z-index: 0;
-}
-
-.hero-image-vector {
-    position: relative;
-    bottom: 350px;
-    right: 380px;
-    height: 0;
-    width: 0;
-    z-index: -1;
-}
-
-.hero-image > img {
-    width: 100%;
-    height: auto;
-    z-index: 1;
-}
-
-.hero-image p {
-    display: flex;
-    position: absolute;
-    top: 450px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 130%;
-    padding: 12px 24px;
-    gap: 8px;
-    backdrop-filter: blur(32px);
-    background: rgba(0, 0, 0, 0.4);
-    /* Note: backdrop-filter has minimal browser support */
-    border-radius: 24px;
-    /* or 18px */
-    text-transform: uppercase;
-    cursor: pointer;
-    z-index: 2;
-}
-
-
-.hero-text h1 {
-    font-family: 'Avenir Heavy', sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 51px;
-    line-height: 100%;
-
-}
-
-.hero-text h2 {
-    padding-top: 32px;
-    font-family: 'Avenir', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 130%;
-    color: #D9D7E4;
-}
-
-.hero-services {
-    display: flex;
-    padding-top: 120px;
-    justify-content: space-between;
-    width: 100%;
-    flex-wrap: wrap;
-}
-
-.hero-services .service {
-    max-width: 260px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-
-.hero-services .service h2 {
-    font-family: 'Avenir', sans-serif;
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 130%;
-    color: #00C77D;
-    padding-bottom: 10px;
-}
-
-.hero-services .service p {
-    font-family: 'Avenir', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 130%;
-    color: #D9D7E4;
-}
-
-.hero-button {
-    position: relative;
-    margin-top: 64px;
-    margin-bottom: 136px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    cursor: pointer;
-}
-
-.hero-button p {
-    font-family: 'Avenir Heavy', sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 17px;
-    line-height: 20px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 32px;
-    padding: 16px 24px;
-    gap: 8px;
-    transition: 0.2s ease-out;
-}
-
-.hero-button p:hover {
-    background: #FFFFFF;
-    border: 1px solid rgba(255, 255, 255, 0.75);
-    border-radius: 32px;
-    color: #197A56;
-    transition: 0.2s ease-out;
-}
-
-.scrolledButton:hover {
-    background: #198A60;
-    border: 1px solid #167954;
-    border-radius: 32px;
-    color: #FFFFFF;
-}
-
-
-/*---------------BRAND SECTION----------------*/
-
-.brand-section {
-    background: #176E4E;
-}
-
-.brand-section-content {
-    flex-wrap: wrap;
-    display: flex;
-
-}
-
-.brand-section-content p {
-    width: 100%;
-    text-align: center;
-    margin-top: 96px;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 130%;
-    color: #D9D7E4;
-}
-
-
-.brand-section-companies {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px 50px;
-    padding-bottom: 100px;
-    padding-top: 55px;
-    justify-content: space-evenly;
-}
-
-
-.brand-section-companies img {
-    opacity: 0.5;
-    max-height: 64px;
-    display: flex;
-    flex: 1 0 10%;
-}
-
-/*------------MARKETING SECTION---------*/
-
-.marketing-productivity {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-}
-
-.marketing-productivity-content {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 150px;
-    flex-wrap: wrap;
-}
-
-.marketing-productivity-vector {
-    position: relative;
-    width: 0;
-    height: 0;
-    top: 150px;
-    left: calc(100% - 226px);
-}
-
-.marketing-productivity-vectorBottom {
-    position: relative;
-    width: 0;
-    height: 0;
-    top: 1400px;
-}
-
-.marketing-productivity-image {
-
-}
-
-.marketing-productivity-image img {
-    display: flex;
-    width: 100%;
-    height: auto;
-    background: url("/img/marketing-image.png");
-    border-radius: 16px;
-}
-
-.marketing-productivity-image p {
-    display: flex;
-    position: relative;
-    bottom: 72px;
-    max-width: 360px;
-
-    font-size: 14px;
-    line-height: 130%;
-    padding: 12px 24px;
-    gap: 8px;
-    backdrop-filter: blur(32px);
-    background: rgba(0, 0, 0, 0.4);
-    /* Note: backdrop-filter has minimal browser support */
-    border-radius: 24px;
-    /* or 18px */
-    text-transform: uppercase;
-    cursor: pointer;
-    left: calc(50% - 180px);
-}
-
-.marketing-productivity-text {
-    max-width: 39%;
-    padding-top: 32px;
-}
-
-.marketing-productivity-layer-text {
-    cursor: pointer;
-}
-
-.marketing-productivity-text h1 {
-    /* Marketing Productivity, Levelled Up */
-    font-weight: 900;
-    font-family: 'Avenir Heavy', sans-serif;
-    font-size: 41px;
-    line-height: 110%;
-    color: #1B5A49;
-    padding-bottom: 16px;
-}
-
-.marketing-productivity-text p {
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 130%;
-    color: #36464D;
-}
-
-.marketing-productivity-hero {
-    font-family: 'Avenir Heavy', sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 41px;
-    line-height: 110%;
-    /* or 45px */
-    text-align: center;
-    /* Heading Dark Green */
-    color: #1B5A49;
-    padding-top: 162px;
-}
-
-.marketing-productivity-casestudies {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 72px;
-}
-
-.marketing-productivity-case-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-items: flex-end;
-    justify-content: flex-end;
-    background: #FFFFFF;
-    max-width: 552px;
-    border: 1px solid #DAE0E2;
-    box-shadow: 0 4px 16px rgba(17, 85, 60, 0.05);
-    border-radius: 16px;
-    margin-bottom: 100px;
-    cursor: pointer;
-}
-
-.marketing-productivity-case-container .case-header {
-    font-family: 'Avenir Heavy', sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 120%;
-    color: #197A56;
-    padding: 24px 54px 16px 24px;
-}
-
-.case-container-image img {
-    width: 100%;
-    height: auto;
-}
-
-.marketing-productivity-case-container > p {
-    font-family: 'Avenir', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 140%;
-    color: #62767F;
-    padding: 0 92px 29px 24px;
-}
-
-.button-projects {
-    font-family: 'Avenir Heavy', sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 17px;
-    line-height: 20px;
-    color: #FFFFFF;
-    background: #197A56;
-    border: 1px solid #166A4B;
-    border-radius: 32px;
-    padding: 16px 24px;
-    gap: 8px;
-    margin-right: 24px;
-    cursor: pointer;
-    transition: ease-in 0.2s;
-
-}
-
-.button-projects:hover, .flex-outer button:hover {
-    background: #198A60;
-    border: 1px solid #167954;
-    border-radius: 32px;
-    color: #FFFFFF;
-    transition: ease-in 0.2s;
-
-}
-
-.button-contactus {
-    font-family: 'Avenir Heavy', sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 17px;
-    line-height: 20px;
-    color: #197A56;
-    padding: 16px 24px;
-    gap: 8px;
-    background: rgba(0, 166, 104, 0.05);
-    border: 1px solid rgba(25, 122, 86, 0.5);
-    border-radius: 32px;
-    cursor: pointer;
-    transition: ease-in 0.2s;
-
-}
-
-.button-contactus:hover, .jobs-section-text button:hover {
-    background: rgba(0, 166, 104, 0.1);
-    border: 1px solid rgba(25, 122, 86, 0.75);
-    border-radius: 32px;
-    transition: ease-in 0.2s;
-
-}
-
-.marketing-productivity-buttons {
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-items: center;
-    width: 100%;
-}
-
-
-.white {
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(32px);
-    transition: ease-in 0.2s;
-}
-
-.minimized {
-    transition: ease-in 0.2s;
-    transform: scale(0.7);
-    margin-left: 35px;
-}
-
-/*------------JOBS SECTION---------*/
-
-.jobs-section {
-    background-color: white;
-    padding-top: 150px;
-    padding-bottom: 274px;
-}
-
-.jobs-section-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.jobs-section-top-vector {
-    position: relative;
-}
-
-.jobs-section-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-
-.jobs-section-text {
-    margin-top: 32px;
-    margin-right: 100px;
-    max-width: 370px;
-
-}
-
-.jobs-section-text h1 {
-    font-family: 'Avenir Heavy';
-    font-size: 41px;
-    line-height: 110%;
-    color: #1B5A49;
-    font-style: normal;
-}
-
-.jobs-section-text mark {
-    font-family: 'Avenir Medium';
-    font-weight: 500;
-    line-height: 130%;
-    color: #1B5A49;
-    background-color: #E2EFEB;
-    border-radius: 3px;
-}
-
-.jobs-section-text p {
-    font-family: 'Avenir Medium';
-    color: #36464D;
-    font-size: 17px;
-    line-height: 130%;
-    margin-top: 35px;
-    font-weight: 500;
-    margin-bottom: 24px;
-}
-
-.jobs-section-text button {
-    margin-top: 33px;
-    display: flex;
-    background: rgba(0, 166, 104, 0.05);
-    border: 1px solid rgba(25, 122, 86, 0.5);
-    border-radius: 32px;
-    padding: 16px 24px;
-    font-weight: 900;
-    font-size: 17px;
-    line-height: 20px;
-    gap: 8px;
-    color: #197A56;
-    font-family: 'Avenir Heavy';
-    font-weight: 900;
-    cursor: pointer;
-    transition: 0.2s ease-out;
-}
-
-
-/*------------DIFFERENCE SECTION---------*/
-
-.difference-section {
-    background-color: white;
-    padding-bottom: 120px;
-}
-
-.difference-section-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.difference-section-container h1 {
-    font-family: 'Avenir Heavy';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 41px;
-    line-height: 110%;
-    /* or 45px */
-    color: #1B5A49;
-    text-align: center;
-    margin-bottom: 57px;
-    width: 100%;
-}
-
-.difference-section-box {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
-    padding: 32px 24px;
-    gap: 16px;
-    background: #FFFFFF;
-    border: 1px solid #DAE0E2;
-    border-radius: 16px;
-    max-width: 360px;
-    margin-bottom: 32px;
-
-}
-
-.difference-section-box h4 {
-    font-family: 'Avenir Heavy';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 21px;
-    line-height: 130%;
-    color: #1B5A49;
-}
-
-.difference-section-box p {
-    font-family: 'Avenir';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 130%;
-    color: #36464D;
-
-}
-
-
-/*------------CONTACT SECTION---------*/
-
-.contact-section {
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(180deg, rgba(243, 247, 246, 0) 0%, rgba(243, 247, 246, 0.69599) 18.23%, rgba(243, 247, 246, 0.807692) 48.96%);
-}
-
-.contact-section-box {
-    margin: 200px 0;
-    max-width: 575px;
-    background: #FFFFFF;
-    border: 1px solid #DAE0E2;
-    box-shadow: 0px 4px 16px rgba(17, 85, 60, 0.05);
-    border-radius: 16px;
-    z-index: 1;
-}
-
-.contact-section-box h1 {
-    font-family: 'Avenir Heavy';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 33px;
-    line-height: 120%;
-    color: #1B5A49;
-    padding: 14px 48px 34px 48px;
-}
-
-.contact-section-box img {
-    padding-top: 51px;
-    padding-left: 48px;
-}
-
-.contact-form {
-}
-
-.flex-outer li {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    padding: 0 48px;
-}
-
-.flex-outer label {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    font-family: 'Avenir Medium';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 19px;
-    color: #197A56;
-    padding-bottom: 4px;
-}
-
-.flex-outer input {
-    background: #F5FAF8;
-    border: 1px solid #D1E4DD;
-    border-radius: 8px;
-    height: 40px;
-    margin-bottom: 16px;
-}
-
-.flex-outer textarea {
-    background: #F5FAF8;
-    border: 1px solid #D1E4DD;
-    border-radius: 8px;
-    height: 96px;
-    resize: none;
-}
-
-.flex-outer button {
-    width: 101px;
-    height: 40px;
-    cursor: pointer;
-    margin-left: 48px;
-    margin-top: 24px;
-    margin-bottom: 45px;
-    background: #197A56;
-    border: 1px solid #166A4B;
-    border-radius: 32px;
-    font-family: 'Avenir Heavy';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 17px;
-    line-height: 20px;
-    color: #FFFFFF;
-    transition: 0.2s ease-out;
-}
-
-.form-button {
-    display: flex;
-    align-items: center;
-}
-
-.form-button p {
-    font-family: 'Avenir';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 130%;
-    color: #62767F;
-    padding-left: 19px;
-}
-
-
-.contact-section-box-top-vector {
-    position: relative;
-    bottom: -230px;
-    left: 170px;
-    height: 0;
-    width: 0;
-    z-index: 0;
-}
-
-.contact-section-box-bottom-vector {
-    position: relative;
-    height: 0;
-    width: 0;
-    z-index: 0;
-    top: 700px;
-    right: 600px;
-}
-
-/*------------BADGE SECTION---------*/
-
-.badge-section {
-    padding: 64px 0;
-    background-color: white;
-}
-
-.badge-section p {
-    font-family: 'Avenir Medium';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 130%;
-    text-align: center;
-    color: #36464D;
-    margin-bottom: 24px;
-}
-
-.badge-section-badges {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-
-/*------------FOOTER SECTION---------*/
-
-
-.footer-top {
-    padding: 44px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-}
-
-.footer-top img {
-    cursor: pointer;
-}
-
-.footer-socials img {
-    padding-left: 40px;
-    cursor: pointer;
-}
-
-.footer-break-line {
-    border: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.footer-bottom {
-    display: flex;
-    margin: 40px 0;
-    justify-content: space-between;
-}
-
-.footer-services, .footer-clients, .footer-insights, .footer-aboutus, .footer-contact {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-services a, .footer-clients a, .footer-insights a, .footer-aboutus a, .footer-contact a:not(:first-child) {
-    padding-top: 16px;
-    text-decoration: none;
-    font-family: 'Avenir';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 130%;
-    color: #FFFFFF;
-}
-
-.footer-contact a {
-    text-decoration: none;
-    color: #00C77D !important;
-}
-
-
-.footer-bottom p {
-    font-family: 'Avenir Heavy';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 17px;
-    line-height: 130%;
-    color: #FFFFFF;
-}
-
-.footer-end {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 32px 0;
-}
-
-.footer-end-right {
-    display: flex;
-}
-
-.footer-end-right a, .footer-end-right p {
-    padding-left: 40px;
-    text-decoration: none;
-    font-family: 'Avenir';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 140%;
-    color: #FFFFFF;
-}
-
-.footer-end-right p {
-    opacity: 0.5;
-}
