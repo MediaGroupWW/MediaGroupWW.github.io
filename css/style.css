@@ -1290,11 +1290,13 @@ html.sr .load-hidden {
     }
 
     .footer-socials {
+        display: flex;
         width: 100%;
+        justify-content: center;
     }
 
     .footer-socials img {
-        padding-left: 30px;
+        padding: 0 15px;
     }
 
     .footer-bottom {
