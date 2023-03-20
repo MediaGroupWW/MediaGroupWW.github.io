@@ -56,7 +56,6 @@ html.sr .load-hidden {
 .difference-section-container, .badge-section-container, .footer-container, .brand-section-companies {
     max-width: 1200px;
     margin: 0 auto;
-
 }
 
 .full-bleed {
@@ -1067,7 +1066,7 @@ html.sr .load-hidden {
 
 /*------------------------MEDIA QUERIES--------------------------*/
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 639px) {
     .container {
         padding: 0 16px !important;
     }
@@ -1337,3 +1336,10 @@ html.sr .load-hidden {
     }
 }
 
+@media only screen and (min-width: 640px) and (max-width: 1199px) {
+    .container, .brand-section-content, .marketing-productivity-content, .marketing-productivity-casestudies, .jobs-section-container,
+    .difference-section-container, .badge-section-container, .footer-container, .brand-section-companies {
+       padding-left: 48px;
+        padding-right: 48px;
+    }
+}
